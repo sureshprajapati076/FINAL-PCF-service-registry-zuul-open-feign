@@ -1,0 +1,36 @@
+POST https://api-gateway.cfapps.io/signin
+Content-Type: application/json
+
+{
+    "username":"admin@gmail.com",
+    "password":"admin"
+}
+
+###
+GET https://api-gateway.cfapps.io/student-api/name
+Content-Type: application/json
+
+###
+GET https://api-gateway.cfapps.io/student-api/callAddressFromStudent
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MDI4MzE5NTQsImlhdCI6MTYwMjgxMzk1NH0.UabLMqKLpATN19mtnpMGe2F4OesUy9zelCMAQhlR2Y87fIclfEo71bkdM3VlNJruTvgMze3CULYE3OO1BG53Gg
+
+
+###
+GET https://api-gateway.cfapps.io/address-api/getAddress
+Content-Type: application/json
+
+###
+GET https://api-gateway.cfapps.io/address-api/getStudentName
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MDI4MzE5NTQsImlhdCI6MTYwMjgxMzk1NH0.UabLMqKLpATN19mtnpMGe2F4OesUy9zelCMAQhlR2Y87fIclfEo71bkdM3VlNJruTvgMze3CULYE3OO1BG53Gg
+
+### FOllowing is example for pathvariable in open feign
+GET https://api-gateway.cfapps.io/student-api/callAddressWithPathVariable/34
+Content-Type: application/json
+
+### Following is for pathvaraible plus query parameter in open feign
+GET https://api-gateway.cfapps.io/student-api/callAddressWithPathVariable/34?addressId=45
+Content-Type: application/json
+
+
